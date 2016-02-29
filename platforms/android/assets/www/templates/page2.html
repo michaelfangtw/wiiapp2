@@ -1,0 +1,30 @@
+<ion-view title="商品搜尋">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div class="list card">
+            <div class="item item-divider">Search</div>
+            <div class="item item-body">
+                <form class="list">
+                    <label class="item item-input" name="search">
+                        <input type="text" placeholder="請輸入關鍵字 e.g {{data.keyword}}">
+                    </label>
+                    <button class="button button-stable button-block button-full icon ion-search" ng-click="SearchProduct()">Search</button>
+                </form>
+            </div>
+        </div>      
+        <ion-list ng-repeat="product in productSearchList">
+            <div class="item item-body">
+                <img class="full-image" src="{{product.product_image_url}}">
+                <h2> {{product.prod_name}}</h2>
+                <ion-item class="item-icon-left">
+                    <div class="icon">
+                        <span class="button button-clear  button-assertive">特價:{{product.price}}</span>
+                        &nbsp;
+                        <button class="button  button-assertive icon-left  ion-card" ng-click="OpenLink(product.product_url)">我要搶購</button>
+                        &nbsp;
+                        <span class="button button-clear icon-right ion-share" ng-click="SocialShare(product.product_url)"></span>
+                    </div>
+                </ion-item>
+            </div>              
+        </ion-list>
+    </ion-content>
+</ion-view>

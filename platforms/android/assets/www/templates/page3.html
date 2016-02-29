@@ -1,0 +1,7 @@
+<ion-view title="商品分類">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <ion-list ng-repeat="classidObject in classidList">
+            <ion-item ng-click="productListByClassid(classidObject)">{{classidObject.classname}}</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

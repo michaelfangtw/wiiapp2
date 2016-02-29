@@ -1,0 +1,25 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-stable">
+            <div class="title">Menu</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-left has-header">
+            <ion-list>
+                <ion-item ui-sref="menu.page1" menu-close="">最新商品</ion-item>
+                <ion-item ui-sref="menu.page2" menu-close="">商品搜尋</ion-item>
+                <ion-item ui-sref="menu.page3" menu-close="">商品分類</ion-item>
+                <ion-item ui-sref="menu.page4" menu-close="">手電筒</ion-item>
+                <ion-item ui-sref="menu.page5" menu-close="">版本</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
